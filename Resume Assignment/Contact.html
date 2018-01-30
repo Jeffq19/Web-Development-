@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Information</title>
+</head>
+<body>
+	<h1>Contact</h1>
+
+	<p>In order to contact you, please fill out the following.</p>
+	<!-- action - where the form sends data to -->
+	<!-- method - what HTTP method (get/post)  -->
+
+	<form action= "" method="">
+		<table>
+			<thead></thead>
+			<tbody>
+		<tr>
+			<td><label>First Name:</label></td>
+			<td><input name="firstName" type="Text" placeholder="First Name"></td>
+		</tr>
+		
+		<tr>
+		<td><label>Last Name:</label></td>
+		<td><input name="lastName" type="Text" placeholder="Last Name"></td>
+		</tr>
+
+		<tr>
+		<td><label>Telephone number: &nbsp;</label></td>
+		<td><input type="tel" id="telNo" name="tel"
+				value="000-000-0000" size="20" 
+				minlength="9" maxlength="14"></td>
+		</tr>
+		
+		<tr>
+			<td><label>Email address:</label></td>
+		<td><input type="email" name="email" placeholder="ucm@example.com"
+				size="20" minlength="3" maxlength="64"></td>
+		</tr>
+
+		<tr>
+			<td><label>Date:</label></td>
+			<td><input type="Date" id="Date" name="Date"></td>
+		</tr>
+		
+		<tr>
+			<td><label for="listbox">Reason of Contact:</label></td>
+			<td><select id="listbox" name="listbox"> 
+  				<option value="value1">Personal</option> 
+  				<option value="value2">Business</option>
+ 			 	<option value="value3">Other   </option>
+				</select>
+			</td>
+		</tr>
+
+		</tbody>
+		</table><br>
+
+		<div>
+		<label for="range">Level of Importance</label><br>
+		<input id="range" type="range" name="range"
+				min="0" max="10">
+		</div>
+		
+		<div>
+		<p>Please select your preferred contact method:</p>
+		<input id="radioPhone" type="radio" name="radioPhone" 
+				value="Phone">
+		<label for="radioPhone"> Phone </label>
+		
+		<input id="radioEmail" type="radio" name="radioEmail"
+				value="Email">
+		<label for="radioEmail" > Email</label>
+		</div><br>
+		
+		<fieldset>
+ 		 <legend>Preferred time of contact</legend>
+  			<div>
+    		<input type="checkbox" id="morningCheck" name="morningCheck" value="Morning">
+    		<label for="morningCheck">Morning</label>
+  			</div>
+ 			 <div>
+  			 <input type="checkbox" id="afternoonCheck" name="afternoonCheck" value="Afternoon">
+   			 <label for="afternoonCheck">Afternoon</label>
+  			</div>
+  			<div>
+  			<input type="checkbox" name="eveningCheck"
+  					id="eveningCheck" value="Evening">
+  			<label for="eveningCheck">Evening</label>
+  			</div>
+		</fieldset><br>
+
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit">
+	</form><br>
+
+	<a href="firstPage.html">Return to Resume</a> 
+
+</body>
+</html>
